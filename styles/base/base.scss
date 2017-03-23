@@ -1,0 +1,48 @@
+//*
+html,body{
+  margin: 0;
+  box-sizing: border-box;
+  color:black;
+  font-family: sans-serif;
+}
+.container{
+  margin: 0;
+}
+//a
+a{
+  text-decoration: none;
+  color: black;
+}
+//b
+button{}
+//d
+div{}
+//f
+form{}
+footer{}
+//h
+h1,h2,h3,h4,h5,h6{
+  margin: 0;
+}
+header{}
+//l
+li{
+  list-style-type: none;
+}
+//u
+ul{
+  padding: 0;
+  margin: 0;
+}
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin flex-container($justify:flex-start, $align:stretch, $wrap:nowrap, $direction: row) {
+  display: flex;
+  justify-content: $justify;
+  align-content: $align;
+  flex-wrap: $wrap;
+  flex-direction: $direction;
+}
